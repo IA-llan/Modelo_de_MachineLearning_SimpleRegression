@@ -14,7 +14,7 @@ print(dataset)
 x = dataset.iloc[:, : -1].values
 y = dataset.iloc[:, -1].values
 
-# Importacao da bliblioteca de traino e teste e separacao de variaves para treino e utras para teste
+# Importacao da bliblioteca de treino e teste e separacao de variaves para treino e outras para teste
 
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
@@ -47,6 +47,6 @@ plt.xlabel('Years of experience')
 plt.ylabel('Salary')
 plt.show()
 
-# Como prever um dado que esta fora do dataset, como por exemplo uma pessao que tem 12 anos de experiencia
+# Como prever um dado que esta fora do dataset, como por exemplo uma pessoa que tem 12 anos de experiencia
 
 print(regressor.predict([[12]]))
